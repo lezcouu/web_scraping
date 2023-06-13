@@ -13,3 +13,6 @@ $x('//p[2]/text()').map(x=> x.wholeText)[1].replace(/[\s\n]/g, '')
 
 para obtener losd etalles del libro entramos al libro y
 $x('//article[@class="product_page"]/p/text()').map(x => x.wholeText)
+
+para obtener su informacion disponible
+$x('//table[@class="table table-striped"]//tr').map(x => x.innerText).map(x => x.replace("\t", " = ")) de manera mas legible.
